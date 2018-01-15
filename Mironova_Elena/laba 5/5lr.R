@@ -19,9 +19,9 @@ colnames(data)
 data$sex <- factor(c("Female", "Infant", "Male")[data$sex])
 summary(data)
 par(mfrow=c(1,3)) 
-hist(data$diameter, main = "Äèàìåòð, ìì")
-hist(data$height, main = "Âûñîòà, ìì")
-hist(data$whole_weight, main = "Ïîëíûé âåñ, ãð")
+hist(data$diameter, main = "Диаметр, мм")
+hist(data$height, main = "Высота, мм")
+hist(data$whole_weight, main = "Полный вес, гр")
 ```
 ```{r}
 #Видим асимметрию https://en.wikipedia.org/wiki/Skewness
