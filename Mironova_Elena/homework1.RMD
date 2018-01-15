@@ -1,4 +1,4 @@
-﻿---
+---
 title: "homework1"
 author: "Mironova Elena"
 output: html_document
