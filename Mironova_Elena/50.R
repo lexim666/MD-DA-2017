@@ -20,20 +20,20 @@ birthwt$hypertension <- factor(c("No", "Yes")[birthwt$hypertension + 1])
 summary(birthwt)
 
 plot (birthwt$race)
-title (main = "Ðàñîâûé ñîñòàâ ðîæåíèö â Springfield MA, 1986")
+title (main = "Ð Ð°ÑÐ¾Ð²Ñ‹Ð¹ ÑÐ¾ÑÑ‚Ð°Ð² Ñ€Ð¾Ð¶ÐµÐ½Ð¸Ñ† Ð² Springfield MA, 1986")
 
 plot (birthwt$mother.age)
-title (main = "Âîçðàñò ðîæåíèö â Springfield MA, 1986")
+title (main = "Ð’Ð¾Ð·Ñ€Ð°ÑÑ‚ Ñ€Ð¾Ð¶ÐµÐ½Ð¸Ñ† Ð² Springfield MA, 1986")
 
 plot (sort(birthwt$mother.age))
-title (main = "(Îòñîðòèðîâàíî) Âîçðàñò ðîæåíèö â Springfield MA, 1986")
+title (main = "(ÐžÑ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¾) Ð’Ð¾Ð·Ñ€Ð°ÑÑ‚ Ñ€Ð¾Ð¶ÐµÐ½Ð¸Ñ† Ð² Springfield MA, 1986")
 
 plot (birthwt$mother.age, birthwt$birthwt.grams)
-title (main = "Âåñ íîâîðîæä¸ííîãî â ðàçðåçå âîçðàñòà ðîæåíèöû")
+title (main = "Ð’ÐµÑ Ð½Ð¾Ð²Ð¾Ñ€Ð¾Ð¶Ð´Ñ‘Ð½Ð½Ð¾Ð³Ð¾ Ð² Ñ€Ð°Ð·Ñ€ÐµÐ·Ðµ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð° Ñ€Ð¾Ð¶ÐµÐ½Ð¸Ñ†Ñ‹")
 
 plot (birthwt$mother.smokes, birthwt$birthwt.grams, 
-      main="Âåñ íîâîðîæä¸ííîãî â ðàçðåçå êóðèòåëüíîé çàâèñèìîñòè", 
-      ylab = "Âåñ (ã)", xlab="Çàâèñèìîñòü")
+      main="Ð’ÐµÑ Ð½Ð¾Ð²Ð¾Ñ€Ð¾Ð¶Ð´Ñ‘Ð½Ð½Ð¾Ð³Ð¾ Ð² Ñ€Ð°Ð·Ñ€ÐµÐ·Ðµ ÐºÑƒÑ€Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð¹ Ð·Ð°Ð²Ð¸ÑÐ¸Ð¼Ð¾ÑÑ‚Ð¸", 
+      ylab = "Ð’ÐµÑ (Ð³)", xlab="Ð—Ð°Ð²Ð¸ÑÐ¸Ð¼Ð¾ÑÑ‚ÑŒ")
 
 t.test (birthwt$birthwt.grams[birthwt$mother.smokes == "Yes"], 
         birthwt$birthwt.grams[birthwt$mother.smokes == "No"])
